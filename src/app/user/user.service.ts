@@ -1,12 +1,8 @@
-import { Injectable, EventEmitter, OnInit } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService implements OnInit {
+export class UserService {
   activatedEmitter = new EventEmitter<boolean>();
-
-  ngOnInit() {
-    this.activatedEmitter.emit(true);
-  }
 }
